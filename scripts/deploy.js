@@ -1,9 +1,9 @@
 async function main() {
-  const HelloWorld = await ethers.getContractFactory("OPISIds");
+  const OPISIds = await ethers.getContractFactory("OPISIds");
 
   // Start deployment, returning a promise that resolves to a contract object
-  const hello_world = await HelloWorld.deploy();
-  console.log("Contract deployed to address:", hello_world.address);
+  const OPIS_ids = await OPISIds.deploy();
+  console.log("Contract deployed to address:", OPIS_ids.address);
 }
 
 main()
